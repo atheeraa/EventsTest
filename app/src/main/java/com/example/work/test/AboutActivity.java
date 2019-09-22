@@ -26,12 +26,8 @@ public class AboutActivity extends AppCompatActivity {
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             switch (item.getItemId()) {
                 case R.id.home:
-                    mTextMessage.setText(R.string.title_home);
-                    return true;
-                case R.id.about:
                     Intent a = new Intent(AboutActivity.this,MainActivity.class);
                     startActivity(a);
-                    mTextMessage.setText(R.string.about);
                     break;
             }
             return false;
